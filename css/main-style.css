@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  height: 100%; }
+
+
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif; }
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 5px 0; }
+
+.breadcrumb {
+  padding: 15px;
+  width: 100%;
+  background: #f44842;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35); }
+
+.list {
+  height: calc(100% - 112px);
+  width: 100%;
+  overflow-y: auto; }
+  .list .card {
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35);
+    margin: 20px 0px; }
+    .list .card h3 {
+      font-weight: 300; }
+
+.controlbar {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35); }
+  .controlbar ul {
+    width: 300px;
+    padding: 0 2px;
+    margin: 0 auto;
+    list-style: none; }
+    .controlbar ul li {
+      padding: 0% 4%;
+      display: inline-block; }
+      .controlbar ul li button {
+        padding: 8px 6px;
+        outline: none;
+        border: none;
+        background: #fff; }
+        .controlbar ul li button i {
+          font-size: 34px;
+          color: #f44842; }
+        .controlbar ul li button:active {
+          background: #f44842; }
+          .controlbar ul li button:active i {
+            color: #fff; }
+
+.add-panel {
+  padding: 10px;
+  position: fixed;
+  bottom: -300%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out; }
+  .add-panel.active {
+    bottom: 0 !important; }
+  .add-panel .card-panel {
+    width: 300px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 10px; }
+    .add-panel .card-panel button {
+      background: #fff;
+      border: none;
+      outline: none; }
+      .add-panel .card-panel button i {
+        color: #f44842; }
+    .add-panel .card-panel .add-panel-header {
+      text-align: center; }
+      .add-panel .card-panel .add-panel-header .input-section {
+        padding: 10px; }
+        .add-panel .card-panel .add-panel-header .input-section input {
+          outline: none;
+          width: 100%;
+          padding: 10px;
+          font-size: 24;
+          font-weight: 300;
+          border: 1px solid #ccc; }
+        .add-panel .card-panel .add-panel-header .input-section button {
+          padding: 10px;
+          width: 100%;
+          border: none;
+          border-radius: 2px;
+          background: #f44842;
+          font-weight: 500;
+          color: #fff; }
+
+/*# sourceMappingURL=main-style.css.map */

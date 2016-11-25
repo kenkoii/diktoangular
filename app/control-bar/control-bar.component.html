@@ -1,0 +1,50 @@
+<div class="controlbar">
+	<ul>
+		<li>
+			<button id="ctrl-btn" class="acc">
+				<i class="material-icons">
+					person
+				</i>
+			</button>
+		</li>
+		<li>
+			<button id="ctrl-btn" class="add" (click)="showModal()">
+				<i class="material-icons">
+					add
+				</i>
+			</button>
+		</li>
+		<li>
+			<button id="ctrl-btn" class="ldr">
+				<i class="material-icons">
+					star
+				</i>
+			</button>
+		</li>
+		<li>
+			<button id="ctrl-btn" class="src">
+				<i class="material-icons">
+					search
+				</i>
+			</button>
+		</li>
+	</ul>
+</div>
+<div class="add-panel" [class.active]="flag">
+	<div class="card-panel">
+		<button class="close" (click)="showModal()">
+			<i class="material-icons">close</i>
+		</button>
+		<div class="add-panel-header">
+			<h4>New Category</h4>
+			<div class="input-section">
+				<input type="text" name="category" placeholder="New Category">
+			</div>
+			<div class="input-section">
+				<button (click)="addCategory()">
+					ADD
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
